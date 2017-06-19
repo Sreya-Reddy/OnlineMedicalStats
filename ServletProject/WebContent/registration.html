@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		background-image: url("https://s-media-cache-ak0.pinimg.com/564x/37/bd/57/37bd57f4754f412df08ce2ae6b5af520.jpg");
+		background-repeat: no-repeat;
+		background-size: 1400px;
+		font-style: italic;
+		font-size: 18px;
+		font-family: monotype corsiva;
+		text-align: left;
+	}
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function Clicked()
+ {
+	var name=document.getElementById("name").value;
+	var username=document.getElementById("uname").value;
+	var pwd=document.getElementById("pwd").value;
+	var roled=document.getElementById("roleD").value;
+	var rolen=document.getElementById("roleN").value;
+	var namel=name.length;
+	var username1=username.length;
+	var pwdl=pwd.length;
+	var roled1=roled.length;
+	var rolen1=rolen.length;
+	var count=0;
+	if(name1<1)
+	{
+		alert("Name cannot be blank");
+		return false;
+	}
+	else 
+		{
+		if(username1<1)
+			{
+			alert("Username cannot be blank");
+			return false;
+			}
+		else
+			{
+			if(upwd1<1)
+			{
+				alert("Password cannot be blank");
+				return false;
+			}
+			else
+				{
+				if(roled1<1||rolen1<1)
+					{
+					alert("Role cannot be blank");
+					return false;
+					}
+				else
+					{
+					return true;
+					}
+				}
+			}
+		
+		}
+ }
+</script>
+</head>
+<body >
+<div class="jumbotron text-center">
+</div>
+<div class="container">
+<h1><marquee>Enter the details </marquee></h1> <br>
+<form method="post" action="RegistrationHandler"> 
+name:<input type="text" id='name' name="name"><br> <br>
+username:<input type="text" id='uname'name="uname"><br> <br>
+password:<input type="password" id='pwd'name="pwd"><br> <br>
+Role :
+<input type="radio" name="role" value="doctor" id="roleD">Doctor
+  <input type="radio" name="role" value="nurse" id="roleN"> Nurse<br> <br>
+<input type="Submit" value="Submit" onClick="return Clicked();">
+</form>
+</div>
+</body>
+</html>

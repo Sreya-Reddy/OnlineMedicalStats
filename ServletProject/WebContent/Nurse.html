@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		background-image: url("https://s-media-cache-ak0.pinimg.com/564x/37/bd/57/37bd57f4754f412df08ce2ae6b5af520.jpg");
+		background-repeat: no-repeat;
+		background-size: 1400px;
+		font-style: italic;
+		font-size: 18px;
+		font-family: monotype corsiva;
+		text-align: left;
+	}
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript">
+ function Clicked()
+ {
+	var name=document.getElementById("name").value;
+	var age=document.getElementById("age").value;
+	var height=document.getElementById("height").value;
+	var weight=document.getElementById("weight").value;
+	var disease=document.getElementById("disease").value;
+	var namel=name.length;
+	var age1=age.length;
+	var height1=height.length;
+	var weight1=weight.length;
+	var disease1=disease.length;
+	var count=0;
+	if(name1<1)
+	{
+		alert("Name cannot be blank");
+		return false;
+	}
+	else 
+		{
+		if(age1<1)
+			{
+			alert("Age cannot be blank");
+			return false;
+			}
+		else
+			{
+			if(height1<1)
+			{
+				alert("height cannot be blank");
+				return false;
+			}
+			else
+				{
+				if(weight1<1)
+				{
+					alert("weight cannot be blank");
+					return false;
+				}
+				else
+					{
+					if(disease1<1)
+					{
+						alert("disease cannot be blank");
+						return false;
+					}
+					else
+						{
+						return true;
+						}
+									
+					}
+				}
+			}
+		
+		}
+}
+	</script>
+</head>
+<body >
+<div class="jumbotron text-center">
+<h1> Welcome Nurse </h1>
+ </div>
+<div class="container">
+<h1><marquee> Enter the registration details of the Patient </marquee></h1> <br>
+
+<form method="post" action="PatientHandler" >
+ 
+name:<input type="text" id='name' name="pname"><br> <br>
+age:<input type="number" id='age'name="page"><br> <br>
+height:<input type="number" id='height'name="pheight"><br> <br>
+weight:<input type="number" id='weight'name="pweight"><br> <br>
+disease:<input type="text" id='disease'name="pdisease"><br> <br>
+<input type="Submit" value="Submit" onClick="return Clicked();">
+</form>
+</div>
+</body>
+</html>
+
+

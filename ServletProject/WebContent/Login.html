@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<style type="text/css">
+	body {
+		background-image: url("https://s-media-cache-ak0.pinimg.com/564x/37/bd/57/37bd57f4754f412df08ce2ae6b5af520.jpg");
+		background-repeat: no-repeat;
+		background-size: 1400px;
+		font-style: italic;
+		font-size: 18px;
+		font-family: monotype corsiva;
+		text-align: left;
+	}
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+ 
+ function Clicked()
+ {
+	var uname=document.getElementById("name").value;
+	var upwd=document.getElementById("pwd").value;
+	var uname1=uname.length;
+	var upwdl=upwd.length;
+	var count=0;
+	if(uname1<1)
+	{
+		alert("Username cannot be blank");
+		return false;
+	}
+	else
+		{
+		if(upwd1<1)
+		{
+			alert("Password cannot be blank");
+			return false;
+		}
+		else
+			{			
+			return true;
+			}
+		}	
+		
+		return false;
+		}
+		
+</script> 
+</head>
+<body>
+<div class="jumbotron text-center">
+<h1> Welcome </h1> </div>
+<div class="container">
+<h1><marquee>Online Portal </marquee></h1> <br>
+<form  method="post" action="LoginHandler">
+Username:
+	<input type="text" id='name' name="uname"> <br> <br>
+	Password:
+	<input type="Password" id='pwd' name="pwd"><br>	<br>
+	
+	 <input type="Submit" value="Log In" onClick="return Clicked();">
+	 
+</form>
+</div>
+</body>
+</html>
